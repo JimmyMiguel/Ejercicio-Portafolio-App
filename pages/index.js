@@ -1,5 +1,7 @@
 function main(){
     
+    createHeaderCom("headerCom");
+
 
 
 }
