@@ -1,12 +1,36 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.headerCom{
-    width: 100%;
+.headerCom {
+  width: 100%;
+}
+
+.main_Presentation {
+  width: 100%;
+  height: calc(100vh - 114px);
+  background-color: #13171c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 54px;
+}
+
+.main_Presentation span {
+  color: white;
+}
+.main_Presentation h1 {
+  width: 288px;
+  height: 255px;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 60px;
+  color: #00adb5;
+  text-align: center;
 }

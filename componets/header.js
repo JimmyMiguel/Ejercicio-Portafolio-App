@@ -6,6 +6,7 @@ function createHeaderCom(elemento) {
             <img class="logo_name" src="./src/Logotipo Nombre Jimmy Miguel  Galarza.png" alt="">
             </a>
         <div class="links">
+            <img class="icono-cerrar" src="./src/icono-cerrar.svg" alt="">
             <a href="./portfolio.html">Portfolio</a>
             <a href="./servicio.html">Servicios</a>
             <a href="./contacto.html">Contacto</a>
@@ -19,11 +20,13 @@ function createHeaderCom(elemento) {
 
   const menuIcono = contenedor.querySelector(".menu-ico");
   const openMenu = contenedor.querySelector(".links");
+  const icoCerrar = contenedor.querySelector(".icono-cerrar");
 
   menuIcono.addEventListener("click", () => {
-    openMenu.classList.toggle("linksAbierto");
+    openMenu.classList.add("linksAbierto");
+  });
 
-
-    
+  icoCerrar.addEventListener("click", () => {
+    openMenu.classList.remove("linksAbierto");
   });
 }
