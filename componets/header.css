@@ -64,7 +64,7 @@
   text-decoration: none;
 }
 
-@media (min-width: 415px) {
+@media (min-width: 480px) {
   .headerCom {
     height: 121px;
     border-bottom: #eeeeee 1px solid;

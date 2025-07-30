@@ -15,8 +15,11 @@
     <!-- link Css -->
     <link rel="stylesheet" href="./pages/index.css">
     <link rel="stylesheet" href="./componets/header.css">
+    <link rel="stylesheet" href="./componets/card.css">
+    <link rel="stylesheet" href="./componets/formulario.css">
 
     <!-- link Js -->
+    <script defer src="./componets/card.js"></script>
     <script defer src="./componets/header.js"></script>
     <script defer src="./pages/index.js"></script>
 </head>
@@ -24,51 +27,73 @@
 <body>
 
     <header class="headerCom">
-<!-- aqui va el componenete  -->
+        <!-- aqui va el componenete  -->
     </header>
 
     <main class="main_Presentation">
-        <h1> <span>Hola</span> <br> Soy  Jimmy</h1>
+        <h1> <span> Hola </span> Soy Jimmy</h1>
         <img src="./src/imagen-portada.png" alt="">
     </main>
+    <section class="abautMe">
+        <div>
+            <h2>Soy Jimmy</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eius, cumque soluta quo corrupti
+                doloremque.
+                Magni perferendis ipsam, magnam iusto mollitia ex, obcaecati,
+                delectus id.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, molestias necessitatibus sint saepe atque
+                non
+                facilis dolores distinctio officiis et consequatur, cum
+                dolorem fuga maiores!</p>
+        </div>
+        <img src="./src/foto-personal.png" alt="">
+    </section>
+    <section class="works">
+        <h2> <span>Mis</span> Servicios</h2>
 
-    <section>
-        <h2>Soy Jimmy</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eius, cumque soluta quo corrupti doloremque.
-            Magni perferendis ipsam, magnam vel ullam veniam repellendus similique iusto mollitia ex, obcaecati,
-            delectus id.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, molestias necessitatibus sint saepe atque non
-            facilis dolores distinctio officiis mollitia deleniti officia recusandae excepturi et consequatur, cum
-            dolorem fuga maiores!</p>
+
+
+
+        <div class="workCards">
+            <div>
+                <img src="./src/cardImagen.png" alt="">
+            </div>
+            <h3>Desarrollo de paginas web</h3>
+            <p>Creacion de paginas webs, totalmente responsive y mobile first. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit.
+            </p>
+            <!-- aqui va las cards -->
+        </div>
+
+
+
     </section>
 
-    <section>
-        <h2>Mis Servicios</h2>
-        <div class="card1_Com"></div>
-        <div class="card2_Com"></div>
-        <div class="card3_Com"></div>
+    <section class="formulacio-Seccion">
 
+<h3>Escribime</h3>
+
+        <form class="formulario" action="">
+            <label for="">
+                <h4>Nombre</h4>
+                <input type="text" placeholder="Tu nombre">
+            </label>
+            
+            <label for="">
+                <h4>Email</h4>
+                <input type="email" placeholder="Tu @mail.com">
+            </label>
+            
+            <label for="" >
+                <h4>Mensaje</h4>
+                <textarea></textarea>
+            </label>
+
+            <button>Enviar</button>
+            
+        </form>
+        
     </section>
-
-
-    <form action="">
-        <label for="">
-            <h4>Nombre</h4>
-            <input type="text">
-        </label>
-
-        <label for="">
-            <h4>Email</h4>
-            <input type="email">
-        </label>
-
-        <label for="">
-            <h4>Mensaje</h4>
-            <textarea></textarea>
-        </label>
-
-    </form>
-
 
 </body>
 

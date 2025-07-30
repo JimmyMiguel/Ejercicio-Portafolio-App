@@ -1,8 +1,5 @@
 * {
   box-sizing: border-box;
-}
-
-body {
   margin: 0;
   padding: 0;
 }
@@ -10,6 +7,8 @@ body {
 .headerCom {
   width: 100%;
 }
+
+/* Clase main */
 
 .main_Presentation {
   width: 100%;
@@ -19,18 +18,112 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 54px;
+  gap: 100px;
+}
+
+@media (min-width: 1024px) {
+  .main_Presentation {
+    flex-direction: row;
+    gap: 100px;
+  }
 }
 
 .main_Presentation span {
   color: white;
 }
 .main_Presentation h1 {
-  width: 288px;
+  width: 255px;
   height: 255px;
   font-family: "Poppins";
   font-weight: 700;
-  font-size: 60px;
+  font-size: 4.37rem;
   color: #00adb5;
-  text-align: center;
+  text-align: start;
+}
+
+@media (min-width: 1024px) {
+  .main_Presentation h1 {
+    width: 36rem;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 6rem;
+    color: #00adb5;
+  }
+  .main_Presentation h1 span {
+    display: block;
+  }
+}
+
+/* sobre mi */
+.abautMe,
+.works {
+  width: 100%;
+  height: 100vh;
+  background-color: #192130;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 29px;
+}
+.abautMe div {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.abautMe h2,
+.abautMe p {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 42px;
+  color: white;
+  text-align: start;
+}
+
+.abautMe p {
+  width: 295px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #eeeeeebf;
+}
+@media (min-width: 768px) {
+  .abautMe {
+    width: 100%;
+    flex-direction: row;
+  }
+  .abautMe h2 {
+    font-size: 64px;
+  }
+  .abautMe img,
+  .abautMe div {
+    max-width: 623px;
+    width: 100%;
+    margin: 0 30px;
+  }
+}
+.abautMe,
+.works {
+  margin: 0;
+  padding: 0;
+}
+
+/* cards */
+
+.works {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/src/doodle\ items.png");
+  justify-content: start;
+}
+
+.works h2 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 42px;
+  color: #00adb5;
+  margin: 84px 0 66px;
+}
+.works span {
+  color: white;
 }
