@@ -6,20 +6,26 @@
 
 .formulacio-Seccion {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: 800px;
   background-color: #13171c;
   display: flex;
   flex-direction: column;
   align-items: center;
-   padding: 0 39px;
+  justify-content: center;
+  padding: 0 39px;
 }
 
-@media (min-width:1024px) {
-  .formulacio-Seccion{
+@media (min-width: 1024px) {
+  .formulacio-Seccion {
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .formulacio-Seccion h3{
+    align-self: start;
    }
-  
+
 }
 
 .formulacio-Seccion h3 {
@@ -27,50 +33,48 @@
   font-family: Poppins;
   font-weight: 700;
   font-size: 42px;
-  line-height: 80px;
-  margin-top: 39px;
-  display: flex;
-  flex-direction: column;
+  margin-top: 70px;
+  margin-bottom: 40px;
+ 
 }
 
 .formulario {
-  width: 100%;
-  max-width: 600px;
-  max-height: 516px;
+  width: clamp(313px, 60vw, 600px);
+  height: clamp(650px, 80vh, 515px);
   display: grid;
-  grid-template-rows: 1fr 1fr 3fr 1fr;
+  grid-template-rows: auto auto auto auto;
   grid-template-columns: 1fr;
-  gap: 30px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
   color: white;
   font-family: Poppins;
   font-weight: 700;
   font-size: 18px;
+  margin-bottom: 50px;
 }
-@media (min-width:600px) {
-  .formulario{
-grid-template-rows: 1fr 1fr 1fr;
-grid-template-columns: 1fr 1fr;
-column-gap: 10px;
-row-gap: 10px;
+@media (min-width: 600px) {
+  .formulario {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
   }
 
-  .name{
+  .name {
     grid-column: 1;
     grid-row: 1;
   }
 
-  .email{
+  .email {
     grid-column: 2;
     grid-row: 1;
   }
-  .mensaje{
-    grid-column: 1/ span 2;
+  .mensaje {
+    grid-column: 1 / span 2;
     grid-row: 2;
   }
-  
 }
-
-
 
 .formulario input::placeholder {
   font-family: Poppins;
@@ -86,25 +90,22 @@ row-gap: 10px;
   background: rgba(57, 62, 70, 0.5);
   border: none;
   border-radius: 16px;
-  gap: 15px;
 }
 
-.formulario textarea{
+.formulario textarea {
   width: 100%;
-  height: 317px;  
+  height: 280px;
   background: rgba(57, 62, 70, 0.5);
   border: none;
   border-radius: 16px;
 }
 
-.formulario button{
+.formulario button {
   display: block;
-   max-width: 312px;
+  max-width: 312px;
   height: 55px;
- background-color: rgba(0, 173, 181, 1);
-gap: 10px;
-border-radius: 24px;
-padding-top: 10px;
-padding-bottom: 10px;
-
-}
+  background-color: rgba(0, 173, 181, 1);
+  border-radius: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ }
