@@ -89,6 +89,13 @@
   font-weight: 400;
   color: #eeeeeebf;
 }
+.abautMe img {
+  width: clamp(290px, 60vw, 600px);
+  margin-right: 30px;
+}
+
+
+
 @media (min-width: 768px) {
   .abautMe {
     width: 100%;
@@ -103,9 +110,8 @@
     margin: 0 30px;
   }
   .abautMe img {
-    width: 100%;
-    max-width: 623px;
-    margin-right: 30px;
+    width: clamp(200px, 40vw, 600px);
+    margin-right: 10px;
   }
 }
 
