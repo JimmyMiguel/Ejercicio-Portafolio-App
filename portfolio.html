@@ -18,8 +18,11 @@
     <!-- link Css -->
     <link rel="stylesheet" href="./pages/index.css">
     <link rel="stylesheet" href="./componets/header.css">
+    <link rel="stylesheet" href="./componets/card.css">
+    <link rel="stylesheet" href="./componets/footer.css">
 
     <!-- link Js -->
+    <script defer src="./componets/card.js"></script>
     <script defer src="./componets/header.js"></script>
     <script defer src="./pages/porfolio.js"></script>
 
@@ -37,10 +40,68 @@
     </main>
     <!-- Primera -->
 
-    <section class="works" >
-        
+    <section class="works">
+        <h2> <span>Mis</span> Servicios</h2>
+        <!-- primero la clase donde se duplicaran los  template creados  -->
+        <div class="workPlace">
+
+        </div>
+            
+            <!-- Aqui debajo creamos el template con los css ya estilados -->
+            <template id="template_work">
+                <div class="workCards">
+                    <div>
+                        <img class="template_work_img" src="" alt="">
+                    </div>
+                    <h3 class="template_work_h3"></h3>
+                    <p class="template_work_p">
+                    </p>
+                </div>
+
+        </template>
+        <!-- aqui va las cards -->
+
 
     </section>
+
+
+    <footer class="footer">
+
+        <div class="logo">
+            <img src="./src/Logotipo Nombre Jimmy Miguel  Galarza.png" alt="">
+        </div>
+
+        <div class="footer__header">
+
+            <div class="home footer__align">
+                <img src="./src/home.png" alt="">
+                <a href="http://">Home</a>
+            </div>
+            <div class="servicios footer__align">
+                <img src="./src/user.png" alt="">
+                <a href="http://">Servicios</a>
+            </div>
+            <div class="phone footer__align">
+                <img src="./src/phone.png" alt="">
+                <a href="http://">Contactos</a>
+            </div>
+
+        </div>
+
+        <div class="redes-sociales">
+            <img src="./src/linkedin.png" alt="">
+            <img src="./src/tuitter.png" alt="">
+            <img src="./src/github.png" alt="">
+        </div>
+
+        <a class="link-apx" href="https://apx.school">©2022 - https://apx.school</a>
+
+
+
+
+
+
+    </footer>
 
 
 

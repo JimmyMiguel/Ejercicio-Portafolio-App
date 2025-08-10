@@ -1,6 +1,6 @@
 function main() {
-    createHeaderCom("headerCom");
-  }
-  
-  main();
-  
+  createHeaderCom("headerCom");
+  createCards("workPlace");
+}
+
+main();

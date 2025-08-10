@@ -12,11 +12,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+
     <!-- link Css -->
+    <link rel="stylesheet" href="./pages/index.css">
     <link rel="stylesheet" href="./componets/header.css">
+    <link rel="stylesheet" href="./componets/card.css">
+    <link rel="stylesheet" href="./componets/footer.css">
 
     <!-- link Js -->
     <script defer src="./componets/header.js"></script>
+    <script  defer src="./componets/card.js"></script>
     <script defer src="./pages/servicio.js"></script>
 
 </head>
@@ -25,6 +31,80 @@
     <header class="headerCom">
         <!-- aqui va el componenete  -->
     </header>
+
+    <main class="main_Presentation">
+        <h1> <span> Mis  </span>Servicios</h1>
+        <img src="./src/imagen-portada.png" alt="">
+    </main>
+
+
+    <section class="works">
+
+        <!-- primero la clase donde se duplicaran los  template creados  -->
+        <div class="workPlace">
+
+        </div>
+
+        <!-- Aqui debajo creamos el template con los css ya estilados -->
+        <template id="template_work">
+            <div class="workCards">
+
+                <div>
+                    <img class="template_work_img" src="" alt="">
+                </div>
+                <h3 class="template_work_h3"></h3>
+                <p class="template_work_p">
+                </p>
+            </div>
+        </template>
+
+        <!-- aqui va las cards -->
+
+
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="logo">
+            <img src="./src/Logotipo Nombre Jimmy Miguel  Galarza.png" alt="">
+        </div>
+
+        <div class="footer__header">
+
+            <div class="home footer__align">
+                <img src="./src/home.png" alt="">
+                <a href="http://">Home</a>
+            </div>
+            <div class="servicios footer__align">
+                <img src="./src/user.png" alt="">
+                <a href="http://">Servicios</a>
+            </div>
+            <div class="phone footer__align">
+                <img src="./src/phone.png" alt="">
+                <a href="http://">Contactos</a>
+            </div>
+
+        </div>
+
+        <div class="redes-sociales">
+            <img src="./src/linkedin.png" alt="">
+            <img src="./src/tuitter.png" alt="">
+            <img src="./src/github.png" alt="">
+        </div>
+
+        <a class="link-apx" href="https://apx.school">©2022 - https://apx.school</a>
+
+
+
+
+
+
+    </footer>
+
+
+
+
 
 </body>
 

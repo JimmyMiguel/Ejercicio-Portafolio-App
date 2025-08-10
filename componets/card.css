@@ -21,6 +21,10 @@
     height: 158px;
 }
 
+.workCards div > img{
+    width: 100%;
+}
+
 .workCards h3, .workCards p{
     display: block;
     max-width: 280px;

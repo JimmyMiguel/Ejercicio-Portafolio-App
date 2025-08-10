@@ -24,9 +24,6 @@ function createCards(elemento) {
       // limpia el contenido antes de volver a mostrar nuevos datos , esto evita duplicados
       insert_work.innerHTML = "";
 
-
-
-      
       for (const x of datosConteful) {
         // Clonamos el contenido de works
         const clon = works.content.cloneNode(true);
@@ -44,9 +41,10 @@ function createCards(elemento) {
         const imageUrl = "https:" + asset.fields.file.url;
 
         imagen.src = imageUrl;
+        titulo.textContent = x.fields.titleWork;
+        parrafo.textContent = x.fields.workDescription;
 
         insert_work.appendChild(clon);
-
       }
     });
 
