@@ -10,7 +10,8 @@
 
 /* Clase main */
 
-.main_Presentation, .main_Portfolio {
+.main_Presentation,
+.main_Portfolio {
   width: 100%;
   height: calc(100vh - 114px);
   background-color: #13171c;
@@ -22,16 +23,19 @@
 }
 
 @media (min-width: 1024px) {
-  .main_Presentation, .main_Portfolio {
+  .main_Presentation,
+  .main_Portfolio {
     flex-direction: row;
     gap: 100px;
   }
 }
 
-.main_Presentation span, .main_Portfolio span {
+.main_Presentation span,
+.main_Portfolio span {
   color: white;
 }
-.main_Presentation h1, .main_Portfolio h1 {
+.main_Presentation h1,
+.main_Portfolio h1 {
   width: 255px;
   height: 255px;
   font-family: "Poppins";
@@ -42,14 +46,16 @@
 }
 
 @media (min-width: 1024px) {
-  .main_Presentation h1, .main_Portfolio h1 {
+  .main_Presentation h1,
+  .main_Portfolio h1 {
     width: 36rem;
     font-family: "Poppins";
     font-weight: 700;
     font-size: 6rem;
     color: #00adb5;
   }
-  .main_Presentation h1 span, .main_Portfolio h1 span {
+  .main_Presentation h1 span,
+  .main_Portfolio h1 span {
     display: block;
   }
 }
@@ -94,8 +100,6 @@
   margin-right: 30px;
 }
 
-
-
 @media (min-width: 768px) {
   .abautMe {
     width: 100%;
@@ -120,7 +124,7 @@
 .works {
   width: 100%;
   height: 100%;
-  background-image: url("/src/doodle\ items.png");
+  background-image: url("../images/doodle\ items.png");
   justify-content: start;
 }
 

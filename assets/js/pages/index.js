@@ -1,6 +1,7 @@
 function main() {
   createHeaderCom("headerCom");
   createCards("workPlace");
+  crearFormulario("formulacio-Seccion");
 
   fetch(
     "https://preview.contentful.com/spaces/ijty4i0htq9n/environments/master/assets/1Q1DRQV3Afo70Pz874ScO9?access_token=_k3riHq77wPayIXr_svPPX7Cgpy3Tas0qQQu8wn-Kuw"

@@ -3,15 +3,15 @@ function createHeaderCom(elemento) {
   const contenedor = document.querySelector(`.${elemento}`);
   contenedor.innerHTML = `
             <a href="./index.html">
-            <img class="logo_name" src="./src/Logotipo Nombre Jimmy Miguel  Galarza.png" alt="">
+            <img class="logo_name" src="./assets/images/Logotipo Nombre Jimmy Miguel  Galarza.png" alt="">
             </a>
         <div class="links">
-            <img class="icono-cerrar" src="./src/icono-cerrar.svg" alt="">
+            <img class="icono-cerrar" src="./assets/images/icono-cerrar.svg" alt="">
             <a href="./portfolio.html">Portfolio</a>
             <a href="./servicio.html">Servicios</a>
             <a href="./contacto.html">Contacto</a>
         </div>
-        <img class="menu-ico" src="./src/icons8-menu.svg " alt="">
+        <img class="menu-ico" src="./assets/images/icons8-menu.svg" alt="">
     
     `;
 
