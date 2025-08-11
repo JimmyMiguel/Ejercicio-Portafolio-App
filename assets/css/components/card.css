@@ -4,6 +4,12 @@
     align-items: center;
      gap: 25px;}
 
+     @media (min-width: 250px) {
+            .workPlace{
+                flex-direction: row;
+            }
+     }
+
 .workCards {
   background-color: rgba(57, 62, 70, 0.5);
    width: 325px;
