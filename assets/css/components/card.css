@@ -1,18 +1,35 @@
-.workPlace{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-     gap: 25px;}
+.workPlace {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  justify-items: center;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
 
-     @media (min-width: 250px) {
-            .workPlace{
-                flex-direction: row;
-            }
-     }
+@media (min-width: 768px) {
+  .workPlace {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .workPlace {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+  }
+}
+
+
 
 .workCards {
   background-color: rgba(57, 62, 70, 0.5);
-   width: 325px;
+  width: 100%;
+  max-width: 325px;
   height: 480px;
   display: flex;
   flex-direction: column;
@@ -22,39 +39,56 @@
   padding-top: 42px;
 }
 
-.workCards div{
-    width: 280px;
-    height: 158px;
+.workCards div {
+  width: 100%;
+  max-width: 280px;
+  height: 158px;
 }
 
-.workCards div > img{
-    width: 100%;
+.workCards div > img {
+  width: 100%;
 }
 
-.workCards h3, .workCards p{
-    display: block;
-    max-width: 280px;
-    font-family: Poppins;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 33px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-    color: #EEEEEE;
-
+.workCards h3,
+.workCards p {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 33px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #eeeeee;
+  padding: 0 15px;
 }
 
-.workCards p{
-    max-height:100px ;
-    font-family: Poppins;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 16px;
-     line-height: 100%;
-    letter-spacing: 0%;
-    text-align: start;
-    
+.workCards p {
+  max-height: 100px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: start;
+  padding: 0 15px;
 }
 
+/* Centrado mejorado para la sección works */
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 0 20px;
+}
 
+.works h2 {
+  text-align: center;
+  margin: 84px auto 66px;
+  width: 100%;
+}
